@@ -20,7 +20,7 @@ http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd
      
      
       
-       
+       <!-- database connection setting -->
         
 <bean id="dataSource"
   class="org.springframework.jdbc.datasource.DriverManagerDataSource">
@@ -29,6 +29,7 @@ http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd
   <property name="username" value="sa" />
   <property name="password" value="sa" />
  </bean>
+ <!--  -->
  <bean id="sessionFactory"
   class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
   <property name="dataSource" ref="dataSource" />
@@ -64,3 +65,5 @@ http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd
 
 	
 </beans>
+
+
